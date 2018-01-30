@@ -1,7 +1,7 @@
 Python
 ==========
 
-### Sorting difference in Pandas and List
+### Sorting difference in Pandas and Coding (List)
 
 List: l = [(1,2), (3,5), (6,3)]
 
