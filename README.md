@@ -15,3 +15,15 @@ Note:
 
   - Coding: 'key', 'reverse', 'names'
   - DataFrame uses concepts from Excel: 'by', 'ascending', 'columns'
+  
+### No change conditions in 'while' or 'for' loop
+
+The behavior of the following code is unknown:
+
+```python
+i = 0
+j = 0
+while i < 5 - j:
+    i += 1
+	j += 1
+```
