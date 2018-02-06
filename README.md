@@ -27,3 +27,8 @@ while i < 5 - j:
     i += 1
 	j += 1
 ```
+
+### Numpy.Random
+
+  - random.random: [0,1) uniform distribution
+  - random.randint(low, high, size): random integer in range [low, high) 
