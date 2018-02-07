@@ -32,3 +32,4 @@ while i < 5 - j:
 
   - random.random: [0,1) uniform distribution
   - random.randint(low, high, size): random integer in range [low, high) 
+  - random.randn(): standard normal distribution 
