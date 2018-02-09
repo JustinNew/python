@@ -18,7 +18,7 @@ Note:
   
 ### No change conditions in 'while' or 'for' loop
 
-The behavior of the following code is unknown:
+The behavior of the following code is error-prone:
 
 ```python
 i = 0
