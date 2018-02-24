@@ -30,6 +30,6 @@ while i < 5 - j:
 
 ### Numpy.Random
 
-  - random.random: [0,1) uniform distribution
-  - random.randint(low, high, size): random integer in range [low, high) 
-  - random.randn(): standard normal distribution 
+  - np.random.random: [0,1) uniform distribution
+  - np.random.randint(low, high, size): random integer in range [low, high). **VS** random.randint(a,b) includes b ~ [a,b]. 
+  - np.random.randn(): standard normal distribution 
