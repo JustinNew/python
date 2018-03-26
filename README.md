@@ -33,3 +33,12 @@ while i < 5 - j:
   - np.random.random: [0,1) uniform distribution
   - np.random.randint(low, high, size): random integer in range [low, high). **VS** random.randint(a,b) includes b ~ [a,b]. 
   - np.random.randn(): standard normal distribution 
+  
+### Import Self Defined Function
+
+Import function from file.py use:
+```
+from file import function
+```
+  - Make sure 'file' is not one of Python's core modules.
+  - If you are calling a.py from b.py, make sure the two files are in the same directoty.
