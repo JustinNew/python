@@ -46,6 +46,6 @@ from file import function
 ### Install Package In Anaconda
 
 To install a non-conda package:
-$ conda info --envs
-$ source activate myenvvalue
-$ pip install packagename
+  - $ conda info --envs
+  - $ source activate myenvvalue
+  - $ pip install packagename
