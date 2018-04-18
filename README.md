@@ -42,3 +42,9 @@ from file import function
 ```
   - Make sure 'file' is not one of Python's core modules.
   - If you are calling a.py from b.py, make sure the two files are in the same directoty.
+  
+### Install Package In Anaconda
+
+$ conda info --envs
+$ source activate myenvvalue
+$ pip install packagename
