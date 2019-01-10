@@ -14,3 +14,8 @@ t2 = datetime(2019,1,2,0,0).date() + timedelta(7)
 
 # To '2019-01-02'
 datetime.strftime(t, '%Y-%m-%d')
+
+# One default argument depending on another argument
+def func(n=5.0, delta=None):
+     if delta is None:
+         delta = n/10
