@@ -49,3 +49,37 @@ To install a non-conda package:
   - $ conda info --envs
   - $ source activate myenvvalue
   - $ pip install packagename
+
+### Import a package from different directory
+
+  - When importing a file, Python only searches the current directory, the directory that the entry-point script is running from, and sys.path which includes locations such as the package installation directory (it's actually a little more complex than this, but this covers most cases).
+
+The way to import the module from a directory is as follows:
+  - First, ADD __INIT__
+    - Ensure that a file called __init__ is added to the folder that contains the module you want to import. This file is typically empty.
+  - Then, IMPORT MODULE
+    - If the directory is in the working directory:
+      - Import the module using the following syntax 'from <folder>.<filename> import <module>'.
+      - <folder> is in the same directory as the running python file.
+    - If the directory is not in the same working directory:
+      - When modules are in parallel locations, as in the question:
+        ```sh
+        application/app2/some_folder/some_file.py
+        application/app2/another_folder/another_file.py
+        ```
+        - This shorthand makes one module visible to the other:
+        ```python
+        import sys
+        sys.path.append('../')
+        ```
+    - Or, 
+      ```python
+      import sys
+      sys.path.insert(0, '/path/to/application/app/folder')
+
+      import file
+      ```
+      or,
+      ```python
+      sys.path.append('/path/to/application/app/folder')
+      ```
