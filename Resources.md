@@ -8,3 +8,8 @@ Studying Python Resources
 ### OOO Python
 
   - [Python3 Object Oriented Programming](https://realpython.com/python3-object-oriented-programming/#classes-in-python)
+
+### Use easyargs
+
+  - [easyargs](https://github.com/stedmeister/easyargs)
+  - See the simple_test.py example.
