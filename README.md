@@ -91,3 +91,7 @@ The way to import the module from a directory is as follows:
 ### Default Arguments
 
   - All required parameters must be placed before any default arguments. Simply because they are mandatory, whereas default arguments are not.
+    - Positional arguments must be before default.
+    - Position of positional arguments is important.
+    - Default arguments must be after positional arguments.
+    - Position of default arguments is not important.
