@@ -87,3 +87,7 @@ The way to import the module from a directory is as follows:
       ```python
       sys.path.append('/path/to/application/app/folder')
       ```
+
+### Default Arguments
+
+  - All required parameters must be placed before any default arguments. Simply because they are mandatory, whereas default arguments are not.
