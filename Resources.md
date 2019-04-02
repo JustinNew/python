@@ -13,3 +13,7 @@ Studying Python Resources
 
   - [easyargs](https://github.com/stedmeister/easyargs)
   - See the simple_test.py example.
+
+### Python Project Structure
+
+  - [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
