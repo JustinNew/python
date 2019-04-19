@@ -19,3 +19,6 @@ datetime.strftime(t, '%Y-%m-%d')
 def func(n=5.0, delta=None):
      if delta is None:
          delta = n/10
+
+# to_datetime() format
+pd.to_datetime(df_avail['local_time'], format='%Y-%m-%d %H:%M:%S')
