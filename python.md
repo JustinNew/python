@@ -47,13 +47,34 @@ class Student:
   - Single underscore as a variable
     - Per convention, a single standalone underscore is sometimes used as a name to indicate that a variable is temporary or insignificant.
 
-### pass
+### Object Oriented Programming
 
-  - In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty.
+  - #### Inheritance
+    - Inheritance is a concept in object-oriented programming in which a class derives (or inherits) attributes and behaviors from another class without needing to implement them again.
 
-### super()
+  - ### pass
+    - In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty.
 
-  - At a high level super() gives you access to methods in a superclass from the subclass that inherits from it.
+  - ### super()
+    - At a high level super() gives you access to methods in a superclass from the subclass that inherits from it.
+
+```python
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * self.length + 2 * self.width
+
+# Here we declare that the Square class inherits from the Rectangle class
+class Square(Rectangle):
+    def __init__(self, length):
+        super().__init__(length, length)
+```
 
 ### Python Code For 2 And 3
 
