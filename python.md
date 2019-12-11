@@ -47,6 +47,14 @@ class Student:
   - Single underscore as a variable
     - Per convention, a single standalone underscore is sometimes used as a name to indicate that a variable is temporary or insignificant.
 
+### pass
+
+  - In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty.
+
+### super()
+
+  - At a high level super() gives you access to methods in a superclass from the subclass that inherits from it.
+
 ### Python Code For 2 And 3
 
 #### Print
