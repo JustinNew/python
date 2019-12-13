@@ -77,6 +77,8 @@ class Square(Rectangle):
         super().__init__(length, length)
 ```
 
+  - ### Composition vs Inheritance
+    - [This link](https://realpython.com/inheritance-composition-python/) explain **Composition vs Inheritance** well.
 ### Python Code For 2 And 3
 
 #### Print
