@@ -15,6 +15,7 @@ Python
   - The main purpose of any decorator is to change your class methods or attributes in such a way so that the user of your class no need to make any change in their code.
 
   - #### @property
+    - [This link](https://www.journaldev.com/14893/python-property-decorator) explained the @property well. 
     - @property decorator for a class method make the method behaving like an attribute
     - property setter can be used to set the value of this 'attribute'
 
@@ -33,6 +34,15 @@ class Student:
         name, rand, marks = sentence.split(' ')
         self.name = name
         self.marks = marks
+
+st.name = "Anusha"
+print(st.name)
+print(st.gotmarks)
+print("##################")
+st.gotmarks = 'Golam obtained 36'
+print(st.gotmarks)
+print(st.name)
+print(st.marks)
 ```
 
 ### Underscore variable
