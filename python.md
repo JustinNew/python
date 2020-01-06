@@ -1,6 +1,12 @@
 Python 
 --
 
+### Replace in String
+
+```python
+"https://logistics.instacart.com/batch_plan?zone_id={}".format(zone_id)
+```
+
 ### Arguments
 
   - *argv
