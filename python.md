@@ -1,6 +1,12 @@
 Python 
 --
 
+### Dictionary
+
+#### Dictionary keys values ordering
+  - If items(), keys(), values(), iteritems(), iterkeys(), and itervalues() are called with no intervening modifications to the dictionary, the lists will directly correspond.
+  - "Dict keeps insertion order" in 3.7
+
 ### Replace in String
 
 ```python
