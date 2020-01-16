@@ -7,6 +7,15 @@ Python
   - If items(), keys(), values(), iteritems(), iterkeys(), and itervalues() are called with no intervening modifications to the dictionary, the lists will directly correspond.
   - "Dict keeps insertion order" in 3.7
 
+### Pandas DataFrame
+
+### Multiple columns to one json column
+
+  - Create single json column of multiple columns values
+
+```python
+df['json_col'] = df[['A', 'B']].apply(lambda x: x.to_json(), axis=1)
+```
 ### Replace in String
 
 ```python
