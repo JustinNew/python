@@ -16,6 +16,22 @@ Python
 ```python
 df['json_col'] = df[['A', 'B']].apply(lambda x: x.to_json(), axis=1)
 ```
+
+### Calculate capacity based on shifts
+
+  - shifts
+    - zone_id, warehouse_location_id, shopper_id, start_hour, end_hour
+  - capacity
+    - zone_id, warehouse_location_id, local_hour, capacity
+
+```python
+_df1 = self._pickup_options[['zone_id', 'warehouse_location_id', 'date', 'option_start_hour']]
+_df2 = self._iss_shifts[['zone_id', 'warehouse_location_id', 'date', 'start_hour', 'end_hour']]
+_df = _df1.merge(_df2, on=['zone_id', 'warehouse_location_id', 'date'])
+_df['capacity'] = _df[['option_start_hour', 'start_hour', 'end_hour']].apply(
+            lambda x: 1 if x[0] > x[1] and x[0] <= x[2] else 0, axis=1)
+```
+
 ### Replace in String
 
 ```python
