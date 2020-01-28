@@ -126,6 +126,11 @@ class Square(Rectangle):
 
   - ### Composition vs Inheritance
     - [This link](https://realpython.com/inheritance-composition-python/) explain **Composition vs Inheritance** well.
+
+  - ### Overriding
+    - In Python method overriding occurs simply defining in the child class a method with the same name of a method in the parent class.
+    - Always use super(cls, self) for Python 2.x or super() for Python 3.x to call the original implementation of a method. This respects the resolution order in case of multiple inheritance and, for Python 3.x, protects from changes in the class hierarchy.
+
 ### Python Code For 2 And 3
 
 #### Print
