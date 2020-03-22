@@ -17,6 +17,11 @@ Python
 df['json_col'] = df[['A', 'B']].apply(lambda x: x.to_json(), axis=1)
 ```
 
+### Expand diction columns
+```python
+result = pd.concat([capacity_in_ml, capacity_in_ml['data'].apply(pd.Series)], axis=1)
+```
+
 ### Calculate capacity based on shifts
 
   - shifts
