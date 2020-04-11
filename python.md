@@ -37,6 +37,16 @@ _df['capacity'] = _df[['option_start_hour', 'start_hour', 'end_hour']].apply(
             lambda x: 1 if x[0] > x[1] and x[0] <= x[2] else 0, axis=1)
 ```
 
+### dataframe loc
+```python
+# update a column with condition
+data.loc[(data.age >= 12), ['section']] = 'M'
+
+# update multiple columns with condition
+data.loc[(data.age >= 20), ['section', 'city']] = ['S','Pune'] 
+```
+
+
 ### Replace in String
 
 ```python
