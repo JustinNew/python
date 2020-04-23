@@ -6,6 +6,7 @@ Python
 #### Dictionary keys values ordering
   - If items(), keys(), values(), iteritems(), iterkeys(), and itervalues() are called with no intervening modifications to the dictionary, the lists will directly correspond.
   - "Dict keeps insertion order" in 3.7
+  - Float can be used for Integer key, and vice versa: Numeric values that compare equal have the same hash value (even if they are of different types, as is the case for 1 and 1.0).
 
 ### Pandas DataFrame
 
