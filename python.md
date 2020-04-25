@@ -47,6 +47,10 @@ data.loc[(data.age >= 12), ['section']] = 'M'
 data.loc[(data.age >= 20), ['section', 'city']] = ['S','Pune'] 
 ```
 
+### dataframe pivot
+```python
+output=df.pivot(index='event',columns='date',values='count').reset_index().rename_axis(None,1)
+```
 
 ### Replace in String
 
