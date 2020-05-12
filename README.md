@@ -38,6 +38,13 @@ while i < 5 - j:
   - np.random.randint(low, high, size): random integer in range [low, high). **VS** random.randint(a,b) includes b ~ [a,b]. 
   - np.random.randn(): standard normal distribution 
   
+### Convert numpy.int64 to python native int
+
+  - This is a little trick, as just use astype(int) may not work.
+```python 
+df['zone_id'] = df['zone_id'].astype(int).astype(object)
+```
+
 ### Import Self Defined Function
 
 Import function from file.py use:
