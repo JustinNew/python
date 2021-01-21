@@ -22,3 +22,8 @@ def func(n=5.0, delta=None):
 
 # to_datetime() format
 pd.to_datetime(df_avail['local_time'], format='%Y-%m-%d %H:%M:%S')
+
+# Add datetime with hour
+# pd.to_timedelta
+df['hours_to_add'] = pd.to_timedelta(df['hour'], 'h')
+df['local_time'] = df['date'] + df['hours_to_add']
