@@ -50,6 +50,11 @@ data.loc[(data.age >= 20), ['section', 'city']] = ['S','Pune']
 ### dataframe pivot
 ```python
 output=df.pivot(index='event',columns='date',values='count').reset_index().rename_axis(None,1)
+
+df = lore.io.snowflake.dataframe(sql)
+df_pivot = pd.pivot_table(df, index=['zone_id'], columns=['hour'], values=['dps']).reset_index()
+df_pivot.columns = df_pivot.columns.map('{0[0]}_{0[1]}'.format)
+df_pivot.rename(columns={'_' + i: i for i in ['zone_id']}, inplace=True)
 ```
 
 ### Replace in String
