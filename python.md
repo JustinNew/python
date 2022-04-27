@@ -158,6 +158,15 @@ class Square(Rectangle):
 
 ### Datetime and Timestamp
 
+#### Convert between local time zone and UTC
+```python
+import pytz
+from datetime import datetime
+local_tz = pytz.timezone('America/Los_Angeles')
+_dt = datetime.now()
+converted_dt = local_tz.localize(datetime(_dt.year, _dt.month, _dt.day)).astimezone(pytz.utc)
+```
+
 #### Convert numpy.datetime64 to datetime.datetime
 ```python
 In [220]: x
