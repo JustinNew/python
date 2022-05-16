@@ -18,6 +18,12 @@ Python
 df['json_col'] = df[['A', 'B']].apply(lambda x: x.to_json(), axis=1)
 ```
 
+### Use Pandas apply function to create multiple new columns
+```python
+df[['starts_at', 'ends_at']] = df.apply(lambda x: my_func(x['col_x'], var),
+                                        axis='columns', result_type="expand")
+```
+
 ### Expand diction columns
 ```python
 result = pd.concat([capacity_in_ml, capacity_in_ml['data'].apply(pd.Series)], axis=1)
