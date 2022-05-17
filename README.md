@@ -5,6 +5,14 @@ Python
 
   - [This](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html) is a good blog explaining how import works.
 
+### importlib.import_module
+
+  - Dynamically import a custom objects at runtime.
+```python
+config = import_module(f".{config_file}", "real_time_engine.configs")
+# import_module(name, package)
+```
+
 ### Sorting difference in Pandas and Coding (List)
 
 List: l = [(1,2), (3,5), (6,3)]
