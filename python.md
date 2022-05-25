@@ -162,6 +162,9 @@ class Square(Rectangle):
     - In Python method overriding occurs simply defining in the child class a method with the same name of a method in the parent class.
     - Always use super(cls, self) for Python 2.x or super() for Python 3.x to call the original implementation of a method. This respects the resolution order in case of multiple inheritance and, for Python 3.x, protects from changes in the class hierarchy.
 
+  - ### Tutorial
+    - A good tutorial about OOP best practices is [here](https://towardsdatascience.com/8-tips-for-object-oriented-programming-in-python-3e98b767ae79).
+
 ### Datetime and Timestamp
 
 #### Convert between local time zone and UTC
